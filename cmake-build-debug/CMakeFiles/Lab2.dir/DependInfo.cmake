@@ -5,7 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/strukovsky/CLionProjects/Lab2/main.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/main.cpp.o"
+  "/home/strukovsky/CLionProjects/Lab2/src/Learner.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/src/Learner.cpp.o"
+  "/home/strukovsky/CLionProjects/Lab2/src/Man.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/src/Man.cpp.o"
   "/home/strukovsky/CLionProjects/Lab2/src/Person.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/src/Person.cpp.o"
+  "/home/strukovsky/CLionProjects/Lab2/src/Prepod.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/src/Prepod.cpp.o"
+  "/home/strukovsky/CLionProjects/Lab2/src/Student.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/src/Student.cpp.o"
   "/home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp" "/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles/Lab2.dir/src/Teacher.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
+/home/strukovsky/CLionProjects/Lab2/header/Departament.h
+
+/home/strukovsky/CLionProjects/Lab2/header/Learner.h
+Man.h
+/home/strukovsky/CLionProjects/Lab2/header/Man.h
+Departament.h
+/home/strukovsky/CLionProjects/Lab2/header/Departament.h
+iostream
+-
+
+/home/strukovsky/CLionProjects/Lab2/header/Man.h
+iostream
+-
+
 /home/strukovsky/CLionProjects/Lab2/header/Person.h
 iostream
 -
 
-/home/strukovsky/CLionProjects/Lab2/header/Teacher.h
+/home/strukovsky/CLionProjects/Lab2/header/Prepod.h
 vector
 -
 iostream
@@ -18,11 +32,27 @@ iostream
 Person.h
 /home/strukovsky/CLionProjects/Lab2/header/Person.h
 
-/home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp
+/home/strukovsky/CLionProjects/Lab2/header/Student.h
+Learner.h
+/home/strukovsky/CLionProjects/Lab2/header/Learner.h
+
+/home/strukovsky/CLionProjects/Lab2/header/Teacher.h
+Student.h
+/home/strukovsky/CLionProjects/Lab2/header/Student.h
+Prepod.h
+/home/strukovsky/CLionProjects/Lab2/header/Prepod.h
+
+/home/strukovsky/CLionProjects/Lab2/main.cpp
+iostream
+-
 cstring
 -
-../header/Teacher.h
+header/Prepod.h
+/home/strukovsky/CLionProjects/Lab2/header/Prepod.h
+header/Learner.h
+/home/strukovsky/CLionProjects/Lab2/header/Learner.h
+header/Teacher.h
 /home/strukovsky/CLionProjects/Lab2/header/Teacher.h
-fstream
--
+header/Student.h
+/home/strukovsky/CLionProjects/Lab2/header/Student.h
 

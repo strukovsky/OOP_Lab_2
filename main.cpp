@@ -1,20 +1,25 @@
 #include <iostream>
 #include <cstring>
+#include "header/Prepod.h"
+#include "header/Learner.h"
 #include "header/Teacher.h"
+#include "header/Student.h"
+
 const int COUNT_OF_RECORDS = 1000;
 
 
 
 int main() {
-    auto* table = new Teacher[COUNT_OF_RECORDS];
+    auto* teachers = new Teacher[COUNT_OF_RECORDS];
     int command = 0;
+
     for(int i = 0; i < COUNT_OF_RECORDS; i++)
     {
         cout<<"Enter command number\n";
-        cout<<"1 - add new Professor\n";
+        cout<<"1 - add new Prepod\n";
         cout<<"2 - search Professor by fio\n";
         cout<<"3 - filter by department\n";
-        cout<<"4 - print table\n";
+        cout<<"4 - print teachers\n";
         cout<<"5 - sort by fio\n";
         cout<<"6 - quit\n";
         cin>>command;
@@ -54,12 +59,60 @@ int main() {
                     cout<<"Failed on entering department! Try again.\n";
                     cin>>status;
                 }
-                Teacher::add(table, department, fio, status);
+                int count_of_students = 0;
+                cout<<"Enter count of students\n";
+                cin>>count_of_students;
+                while(cin.fail() || count_of_students < 0)
+                {
+                    std::cin.clear();
+                    std::cin.ignore(32767,'\n');
+                    cout<<"Failed on entering department! Try again.\n";
+                    cin>>count_of_students;
+                }
+                auto st = new Student[count_of_students];
+                for (int j = 0; j < count_of_students; ++j) {
+                    cout<<"Enter student departament. PIN - 1, PM - 2, KT - 3\n";
+                    int student_departament = 0;
+                    cin>>student_departament;
+                    while(cin.fail() || student_departament <= 0 || student_departament > 3)
+                    {
+                        std::cin.clear();
+                        std::cin.ignore(32767,'\n');
+                        cout<<"Failed on entering student departament! Try again.\n";
+                        cin>>student_departament;
+                    }
+
+                    cout<<"Enter data for student. Name, Surname and afterall, year of education\n";
+                    Man m;
+                    cin>>m;
+                    while(cin.fail() || m.getYearOfEdu() < 1 || m.getYearOfEdu()> 6)
+                    {
+                        std::cin.clear();
+                        std::cin.ignore(32767,'\n');
+                        cout<<"Failed on entering student data! Try again.\n";
+                        cin>>m;
+                    }
+                    int number_of_group;
+                    cout<<"Enter number of group\n";
+                    cin>>number_of_group;
+                    while(cin.fail() || number_of_group <= 0 || number_of_group > 5)
+                    {
+                        std::cin.clear();
+                        std::cin.ignore(32767,'\n');
+                        cout<<"Failed on entering student number of group! Try again.\n";
+                        cin>>student_departament;
+                    }
+                    st[j].setDepartament(student_departament);
+                    st[j].setMan(m);
+                    st[j].setNumberOfGroup(number_of_group);
+
+                }
+                Teacher::add(teachers, department, fio, status, st, count_of_students);
                 break;
             }
             case 2:
             {
-                if(Teacher::get_count() < 1)
+                if(Prepod::get_count() < 1)
                 {
                     cout<<"There is no records in database.\n";
                     break;
@@ -67,12 +120,12 @@ int main() {
                 cout<<"Enter query.\nEnter surname";
                 Person p;
                 cin>>p;
-                cout<<*Teacher::search(table, p);
+                cout<<*search(teachers, p);
                 break;
             }
             case 3:
             {
-                if(Teacher::get_count() < 1)
+                if(Prepod::get_count() < 1)
                 {
                     cout<<"There is no records in database.\n";
                     break;
@@ -87,42 +140,59 @@ int main() {
                     cout<<"Failed on entering department number to filter! Try again.\n";
                     cin >> criteria_department;
                 }
-                auto* vec = Teacher::filter(table, criteria_department);
+                auto* vec = filter(teachers, criteria_department);
                 for( auto& q: *vec)
                     cout<<q;
                 break;
             }
             case 4:
                 if(Teacher::get_count() > 0)
-                    Teacher::describe(table);
+                {
+                    cout<<"Debug "<<teachers[0].students[0].man<<endl;
+                    for (int k = 0; k < Teacher::get_count(); ++k) {
+                        cout << teachers[k].person << " From department ";
+                        switch (teachers[k].department) {
+                            case 1:
+                                cout <<"IPOVS";
+                                break;
+                            case 2:
+                                cout <<"VM";
+                                break;
+                            case 3:
+                                cout <<"VT";
+                                break;
+                        }
+                        cout <<" With status ";
+                        switch (teachers[k].status) {
+                            case 1:
+                                cout <<"teacher";
+                                break;
+                            case 2:
+                                cout <<"Docent";
+                                break;
+                            case 3:
+                                cout <<"Ph. D";
+                        }
+                        cout << endl;
+
+                        for (int y = 0; y < teachers[k].student_count; ++y) {
+                            cout <<teachers[k].students[y]<<endl;
+                        }
+                    }
+                }
+
                 else cout<<"There is no records in database.\n";
                 break;
             case 5:
-                if(Teacher::get_count() > 1)
-                    Teacher::sort(table);
+                if(Prepod::get_count() > 1)
+                    Prepod::sort(teachers);
                 else cout<<"Too small amount of records to sort.\n";
                 break;
             case 6:
-                Teacher::quit(table);
-                goto end;
+                Prepod::quit(teachers);
         }
     }
-    end:
-    char *name = new char[100];
-    char *surname = new char[100];
-    char *patronymic = new char[100];
-    strcpy(name, "a");
-    strcpy(surname, "b");
-    strcpy(patronymic, "c");
-    Person p(name, surname, patronymic);
-    Teacher t(1, name, surname, patronymic, 2);
-    int count = Teacher::count_of_person(table, t);
-    if(count == 0)
-    {
-        cout<<"No such item. Adding\n";
-        Teacher::add(table, t);
-        Teacher::describe(table);
-    } else cout<<"Number of entering of "<<t<<": "<<count;
+
 
     return 0;
 }

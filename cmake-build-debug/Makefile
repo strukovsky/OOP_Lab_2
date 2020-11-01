@@ -150,6 +150,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Learner.o: src/Learner.cpp.o
+
+.PHONY : src/Learner.o
+
+# target to build an object file
+src/Learner.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Learner.cpp.o
+.PHONY : src/Learner.cpp.o
+
+src/Learner.i: src/Learner.cpp.i
+
+.PHONY : src/Learner.i
+
+# target to preprocess a source file
+src/Learner.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Learner.cpp.i
+.PHONY : src/Learner.cpp.i
+
+src/Learner.s: src/Learner.cpp.s
+
+.PHONY : src/Learner.s
+
+# target to generate assembly for a file
+src/Learner.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Learner.cpp.s
+.PHONY : src/Learner.cpp.s
+
+src/Man.o: src/Man.cpp.o
+
+.PHONY : src/Man.o
+
+# target to build an object file
+src/Man.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Man.cpp.o
+.PHONY : src/Man.cpp.o
+
+src/Man.i: src/Man.cpp.i
+
+.PHONY : src/Man.i
+
+# target to preprocess a source file
+src/Man.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Man.cpp.i
+.PHONY : src/Man.cpp.i
+
+src/Man.s: src/Man.cpp.s
+
+.PHONY : src/Man.s
+
+# target to generate assembly for a file
+src/Man.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Man.cpp.s
+.PHONY : src/Man.cpp.s
+
 src/Person.o: src/Person.cpp.o
 
 .PHONY : src/Person.o
@@ -176,6 +230,60 @@ src/Person.s: src/Person.cpp.s
 src/Person.cpp.s:
 	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Person.cpp.s
 .PHONY : src/Person.cpp.s
+
+src/Prepod.o: src/Prepod.cpp.o
+
+.PHONY : src/Prepod.o
+
+# target to build an object file
+src/Prepod.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Prepod.cpp.o
+.PHONY : src/Prepod.cpp.o
+
+src/Prepod.i: src/Prepod.cpp.i
+
+.PHONY : src/Prepod.i
+
+# target to preprocess a source file
+src/Prepod.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Prepod.cpp.i
+.PHONY : src/Prepod.cpp.i
+
+src/Prepod.s: src/Prepod.cpp.s
+
+.PHONY : src/Prepod.s
+
+# target to generate assembly for a file
+src/Prepod.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Prepod.cpp.s
+.PHONY : src/Prepod.cpp.s
+
+src/Student.o: src/Student.cpp.o
+
+.PHONY : src/Student.o
+
+# target to build an object file
+src/Student.cpp.o:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Student.cpp.o
+.PHONY : src/Student.cpp.o
+
+src/Student.i: src/Student.cpp.i
+
+.PHONY : src/Student.i
+
+# target to preprocess a source file
+src/Student.cpp.i:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Student.cpp.i
+.PHONY : src/Student.cpp.i
+
+src/Student.s: src/Student.cpp.s
+
+.PHONY : src/Student.s
+
+# target to generate assembly for a file
+src/Student.cpp.s:
+	$(MAKE) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/Student.cpp.s
+.PHONY : src/Student.cpp.s
 
 src/Teacher.o: src/Teacher.cpp.o
 
@@ -216,9 +324,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Learner.o"
+	@echo "... src/Learner.i"
+	@echo "... src/Learner.s"
+	@echo "... src/Man.o"
+	@echo "... src/Man.i"
+	@echo "... src/Man.s"
 	@echo "... src/Person.o"
 	@echo "... src/Person.i"
 	@echo "... src/Person.s"
+	@echo "... src/Prepod.o"
+	@echo "... src/Prepod.i"
+	@echo "... src/Prepod.s"
+	@echo "... src/Student.o"
+	@echo "... src/Student.i"
+	@echo "... src/Student.s"
 	@echo "... src/Teacher.o"
 	@echo "... src/Teacher.i"
 	@echo "... src/Teacher.s"

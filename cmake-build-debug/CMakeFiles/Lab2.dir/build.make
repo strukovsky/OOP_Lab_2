@@ -70,18 +70,18 @@ CMakeFiles/Lab2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/main.cpp -o CMakeFiles/Lab2.dir/main.cpp.s
 
-CMakeFiles/Lab2.dir/src/Teacher.cpp.o: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/src/Teacher.cpp.o: ../src/Teacher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab2.dir/src/Teacher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab2.dir/src/Teacher.cpp.o -c /home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp
+CMakeFiles/Lab2.dir/src/Prepod.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/Prepod.cpp.o: ../src/Prepod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab2.dir/src/Prepod.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab2.dir/src/Prepod.cpp.o -c /home/strukovsky/CLionProjects/Lab2/src/Prepod.cpp
 
-CMakeFiles/Lab2.dir/src/Teacher.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/Teacher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp > CMakeFiles/Lab2.dir/src/Teacher.cpp.i
+CMakeFiles/Lab2.dir/src/Prepod.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/Prepod.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strukovsky/CLionProjects/Lab2/src/Prepod.cpp > CMakeFiles/Lab2.dir/src/Prepod.cpp.i
 
-CMakeFiles/Lab2.dir/src/Teacher.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Teacher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp -o CMakeFiles/Lab2.dir/src/Teacher.cpp.s
+CMakeFiles/Lab2.dir/src/Prepod.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Prepod.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Prepod.cpp -o CMakeFiles/Lab2.dir/src/Prepod.cpp.s
 
 CMakeFiles/Lab2.dir/src/Person.cpp.o: CMakeFiles/Lab2.dir/flags.make
 CMakeFiles/Lab2.dir/src/Person.cpp.o: ../src/Person.cpp
@@ -96,21 +96,81 @@ CMakeFiles/Lab2.dir/src/Person.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Person.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Person.cpp -o CMakeFiles/Lab2.dir/src/Person.cpp.s
 
+CMakeFiles/Lab2.dir/src/Man.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/Man.cpp.o: ../src/Man.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Lab2.dir/src/Man.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab2.dir/src/Man.cpp.o -c /home/strukovsky/CLionProjects/Lab2/src/Man.cpp
+
+CMakeFiles/Lab2.dir/src/Man.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/Man.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strukovsky/CLionProjects/Lab2/src/Man.cpp > CMakeFiles/Lab2.dir/src/Man.cpp.i
+
+CMakeFiles/Lab2.dir/src/Man.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Man.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Man.cpp -o CMakeFiles/Lab2.dir/src/Man.cpp.s
+
+CMakeFiles/Lab2.dir/src/Learner.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/Learner.cpp.o: ../src/Learner.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Lab2.dir/src/Learner.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab2.dir/src/Learner.cpp.o -c /home/strukovsky/CLionProjects/Lab2/src/Learner.cpp
+
+CMakeFiles/Lab2.dir/src/Learner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/Learner.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strukovsky/CLionProjects/Lab2/src/Learner.cpp > CMakeFiles/Lab2.dir/src/Learner.cpp.i
+
+CMakeFiles/Lab2.dir/src/Learner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Learner.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Learner.cpp -o CMakeFiles/Lab2.dir/src/Learner.cpp.s
+
+CMakeFiles/Lab2.dir/src/Teacher.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/Teacher.cpp.o: ../src/Teacher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Lab2.dir/src/Teacher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab2.dir/src/Teacher.cpp.o -c /home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp
+
+CMakeFiles/Lab2.dir/src/Teacher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/Teacher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp > CMakeFiles/Lab2.dir/src/Teacher.cpp.i
+
+CMakeFiles/Lab2.dir/src/Teacher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Teacher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp -o CMakeFiles/Lab2.dir/src/Teacher.cpp.s
+
+CMakeFiles/Lab2.dir/src/Student.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/Student.cpp.o: ../src/Student.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Lab2.dir/src/Student.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Lab2.dir/src/Student.cpp.o -c /home/strukovsky/CLionProjects/Lab2/src/Student.cpp
+
+CMakeFiles/Lab2.dir/src/Student.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/Student.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/strukovsky/CLionProjects/Lab2/src/Student.cpp > CMakeFiles/Lab2.dir/src/Student.cpp.i
+
+CMakeFiles/Lab2.dir/src/Student.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/Student.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/strukovsky/CLionProjects/Lab2/src/Student.cpp -o CMakeFiles/Lab2.dir/src/Student.cpp.s
+
 # Object files for target Lab2
 Lab2_OBJECTS = \
 "CMakeFiles/Lab2.dir/main.cpp.o" \
+"CMakeFiles/Lab2.dir/src/Prepod.cpp.o" \
+"CMakeFiles/Lab2.dir/src/Person.cpp.o" \
+"CMakeFiles/Lab2.dir/src/Man.cpp.o" \
+"CMakeFiles/Lab2.dir/src/Learner.cpp.o" \
 "CMakeFiles/Lab2.dir/src/Teacher.cpp.o" \
-"CMakeFiles/Lab2.dir/src/Person.cpp.o"
+"CMakeFiles/Lab2.dir/src/Student.cpp.o"
 
 # External object files for target Lab2
 Lab2_EXTERNAL_OBJECTS =
 
 Lab2: CMakeFiles/Lab2.dir/main.cpp.o
-Lab2: CMakeFiles/Lab2.dir/src/Teacher.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/Prepod.cpp.o
 Lab2: CMakeFiles/Lab2.dir/src/Person.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/Man.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/Learner.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/Teacher.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/Student.cpp.o
 Lab2: CMakeFiles/Lab2.dir/build.make
 Lab2: CMakeFiles/Lab2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Lab2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/strukovsky/CLionProjects/Lab2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Lab2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Lab2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

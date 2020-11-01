@@ -84,7 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Departament.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Learner.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Man.h">
+			<Option target="Lab2"/>
+		</Unit>
 		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Person.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Prepod.h">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Student.h">
 			<Option target="Lab2"/>
 		</Unit>
 		<Unit filename="/home/strukovsky/CLionProjects/Lab2/header/Teacher.h">
@@ -93,7 +108,19 @@
 		<Unit filename="/home/strukovsky/CLionProjects/Lab2/main.cpp">
 			<Option target="Lab2"/>
 		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/src/Learner.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/src/Man.cpp">
+			<Option target="Lab2"/>
+		</Unit>
 		<Unit filename="/home/strukovsky/CLionProjects/Lab2/src/Person.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/src/Prepod.cpp">
+			<Option target="Lab2"/>
+		</Unit>
+		<Unit filename="/home/strukovsky/CLionProjects/Lab2/src/Student.cpp">
 			<Option target="Lab2"/>
 		</Unit>
 		<Unit filename="/home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp">
