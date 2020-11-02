@@ -34,6 +34,8 @@ public:
     static int find_count_of_object(Prepod *, const Prepod&);
     static void quit(Prepod *pTeacher);
 
+    virtual string toString();
+
     int status;
     Person person;
     int department;

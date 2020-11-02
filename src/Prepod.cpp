@@ -6,7 +6,7 @@
 #include "../header/Prepod.h"
 #include "../header/Teacher.h"
 #include <fstream>
-
+#include <sstream>
 int Prepod::count;
 
 Prepod::Prepod()
@@ -45,7 +45,7 @@ vector<Prepod> *filter(Prepod *table, int status) {
           Prepod t;
           t.status = status;
           t.department = table[i].department;
-          t.person = Person(table[i].person);
+          t.person =*(new Person(table[i].person)) ;
           result->push_back(t);
       }
     }
@@ -154,6 +154,35 @@ bool Prepod::operator==(const Prepod &p) const {
 Prepod::~Prepod() {
     person.~Person();
 
+}
+
+string Prepod::toString() {
+    auto* o = new std::ostringstream ;
+    *o << person << " From department ";
+    switch (department) {
+        case 1:
+            *o<<"IPOVS";
+            break;
+        case 2:
+            *o<<"VM";
+            break;
+        case 3:
+            *o<<"VT";
+            break;
+    }
+    *o<<" With status ";
+    switch (status) {
+        case 1:
+            *o<<"teacher";
+            break;
+        case 2:
+            *o<<"Docent";
+            break;
+        case 3:
+            *o<<"Ph. D";
+    }
+    *o<< endl;
+    return o->str();
 }
 
 

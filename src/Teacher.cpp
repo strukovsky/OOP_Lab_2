@@ -4,8 +4,9 @@
 
 #include "../header/Teacher.h"
 #include "../header/Student.h"
+#include <sstream>
 
-Teacher::Teacher(int _department, char *_surname, char *_name, char *_patronymic, int _status, int _student_count):
+Teacher::Teacher(int _department,  char *_surname,  char *_name,  char *_patronymic, int _status, int _student_count):
 Prepod(_department, _surname, _name, _patronymic, _status){
     student_count = _student_count;
     students = new Student[student_count];
@@ -60,4 +61,13 @@ ostream &operator<<(ostream &o, const  Teacher& t) {
         o<<t.students[i]<<endl;
     }
     return o;
+}
+
+string Teacher::toString() {
+    auto* o = new std::ostringstream ;
+    *o<<Prepod::toString();
+    for (int i = 0; i < student_count; ++i) {
+        *o<<students[i]<<endl;
+    }
+    return o->str();
 }

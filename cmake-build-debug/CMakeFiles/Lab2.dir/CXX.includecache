@@ -41,6 +41,8 @@ Student.h
 /home/strukovsky/CLionProjects/Lab2/header/Student.h
 Prepod.h
 /home/strukovsky/CLionProjects/Lab2/header/Prepod.h
+string
+-
 
 /home/strukovsky/CLionProjects/Lab2/main.cpp
 iostream
@@ -55,4 +57,26 @@ header/Teacher.h
 /home/strukovsky/CLionProjects/Lab2/header/Teacher.h
 header/Student.h
 /home/strukovsky/CLionProjects/Lab2/header/Student.h
+string
+-
+
+/home/strukovsky/CLionProjects/Lab2/src/Prepod.cpp
+cstring
+-
+../header/Prepod.h
+/home/strukovsky/CLionProjects/Lab2/header/Prepod.h
+../header/Teacher.h
+/home/strukovsky/CLionProjects/Lab2/header/Teacher.h
+fstream
+-
+sstream
+-
+
+/home/strukovsky/CLionProjects/Lab2/src/Teacher.cpp
+../header/Teacher.h
+/home/strukovsky/CLionProjects/Lab2/header/Teacher.h
+../header/Student.h
+/home/strukovsky/CLionProjects/Lab2/header/Student.h
+sstream
+-
 
